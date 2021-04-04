@@ -1,6 +1,4 @@
 
-/*declaration et initialisation des variables */
-
 var  ScoreTour, joueurActuel, randomNumber1, score;
 joueurActuel =0;
 ScoreTour = 0;
