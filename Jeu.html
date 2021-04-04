@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!---------integration page CSS et fonts , on pourrait faire autrement , en telechargeant la page ionicons.min.css dans le projet local ------>
+    <link type="text/css" rel="stylesheet" href="CSS/style.css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <title>Jeu de dé</title>
+</head>
+
+<body>
+    
+    <div class="container">
+	<!---------Nouveau Jeu ------>
+	    <button class="btn-new"><i class="ion-ios-plus-outline"></i> Nouveau Jeu </button>
+
+	<!---------Premier Joueur  ------>
+        <div class="joueur0  active">
+			<p class="joueur0-nom">Joueur 1</p>
+            <div class="joueur-score" id="score0">0</div>
+            <div class="joueur-actuel">
+                <div class="joueur0-actuel-label">Score Actuel</div>
+                <div class="joueur0-actuel-score" id="actuel0">0</div>
+            </div>
+        </div>
+    <!---------Image de la dé ------>
+	    <button class="btn-img"><img  class="img" src = "images/dice6.png"/></button>
+
+    <!---------deuxieme Joueur------>
+	    <div class="joueur1">
+			<p class="joueur1-nom">Joueur 2	</p>
+            <div class="joueur-score" id="score1">0</div>
+            <div class="joueur-actuel">
+                <div class="joueur1-actuel-label">Score Actuel</div>
+                <div class="joueur1-actuel-score" id="actuel1">0</div>
+            </div>
+        </div>
+
+	<!---------LANCEMENT DU JEU, et ajout du score du tour au score Global  ------>
+	
+        <button class="btn-roll"><i class="ion-ios-loop"></i>Lancer le Jeu</button>
+        <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+    </div>
+
+    <!---------integration page Javascript------>
+
+    <script  src="JS/paje.js"></script>
+</body>
+</html>
